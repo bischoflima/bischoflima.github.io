@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/resources/styles/style.css">
+  <link rel="stylesheet" href="assets/resources/styles/index.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <!--inicio da nav-->
+  <nav class="blue darken-2">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"> <i class="material-icons">sticky_note_2</i>ColorNote</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+        <li><a class="tooltipped modal-trigger" href="#modal1" data-position="bottom"
+            data-tooltip="Escolha sua cor preferida para o site!">Color</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Login</a></li>
+    <li><a class="tooltipped modal-trigger" href="#modal1" data-position="bottom"
+      data-tooltip="Escolha sua cor preferida para o site!">Color</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+
+  <div id="modal1" class="modal blue-text">
+    <div class="modal-content">
+      <h4>Selecione sua cor preferida</h4>
+      <div id="cores">
+      <input type="button" onclick="modificaCor('blue')" class="btn_cores blue darken-2">
+      <input type="button" onclick="modificaCor('green')" class="btn_cores green darken-2">
+      <input type="button" onclick="modificaCor('red')" class="btn_cores red darken-2">
+      <input type="button" onclick="modificaCor('yellow')" class="btn_cores yellow darken-2">
+      <input type="button" onclick="modificaCor('purple')" class="btn_cores purple darken-2">
+      <input type="button" onclick="modificaCor('orange')" class="btn_cores orange darken-2">
+    </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+    </div>
+  </div>
+  <!--final da nav-->
+
+  <main class="">
+
+    <h2 class="blue-text darken-3 center">Login</h2>
+
+    <div class="container row blue lighten-5 center formulario">
+      <form class="col s12 m8 offset-m2 l10 offset-l2" id="">
+        <div class="row">
+          <div class="input-field col s10">
+            <i class="material-icons prefix blue-text darken-4">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate blue-text text-darken-2">
+            <label for="icon_prefix" class="blue-text text-darken-1">Usuário</label>
+          </div>
+
+          <div class="input-field col s10">
+            <i class="material-icons prefix  blue-text darken-4">password</i>
+            <input id="icon_senha" type="tel" class="validate blue-text text-darken-2">
+            <label for="icon_senha" class="blue-text text-darken-1">Senha</label>
+          </div>
+        </div>
+      </form>
+      <a class="waves-effect blue waves-light btn-large center">Entrar</a>
+    </div>
+
+    <div class="container row blue lighten-5 center formulario"><a href="cadastro.html" class="tooltipped"
+        data-position="bottom" data-tooltip="Ainda não possui cadastro? Então faça logo o registro!">Registrar-se
+        agora!</a>
+    </div>
+  </main>
+
+  <!--inicio do footer-->
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">ColorNote</h5>
+          <p class="grey-text text-lighten-4">Um app simples para gerenciamento de notas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy;<span id="ano"></span> Copyright Text
+        <a class="grey-text text-lighten-4 right" href="https://github.com/bischoflima/bischoflima.github.io"
+          target="blank">Projeto no GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <!--final do footer-->
+
+  <script src="assets/libraries/jquery/jquery.js"></script>
+  <script src="assets/libraries/materialize/js/materialize.min.js"></script>
+  <script src="assets/resources/scripts/global.js"></script>
+  <script src="assets/resources/scripts/index.js"></script>
+
+  <script>
+    let anoAtual = new Date();
+    $('#ano').text(anoAtual.getFullYear());
+  </script>
+</body>
+
+</html>
