@@ -41,10 +41,10 @@
 - [ ] Função anônima sem argumento
 - [ ] Função anônima com retorno
 - [ ] Função auto-executável
-- [ ] Função com nome
+- [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
-- [ ] Função Flecha - Arrow Function
+- [x] Função Flecha - Arrow Function
 
 ### Eventos
 - [ ] Evento de carregamento do documento - onload
@@ -58,21 +58,21 @@
 - [ ] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 ### Tratadores de Evento
-- [ ] Especificar o tratador de evento inline
+- [x] Especificar o tratador de evento inline
 - [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
 - [ ] Usar o operador this em funções tratadoras de eventos.
 
 ### Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
-   - [ ] Push
+   - [x] repleace
    - [ ] forEach
    - [ ] 
 - [ ] Usar laço de repetição (for..in ou for..of ou forEach)
-   - [ ] For...of
+   - [x] For...of
    - [ ] For...in
    - [ ] forEach
 - [ ] Usar pelo menos 3 métodos para manipulação de string
@@ -122,7 +122,7 @@
 # Avaliação 3
 
 ### jQuery
-- [ ] Uso de seletores CSS - id, classe e tag
+- [x] Uso de seletores CSS - id, classe e tag
 - [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [ ] Efeitos fade ou slide
