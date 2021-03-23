@@ -79,7 +79,7 @@
    - [ ] trim
    - [ ] toLowerCase
    - [ ] search
-- [ ] String Template
+- [ ] String Template 
 
 ### Objetos
 - [ ] Criar objeto usando função construtora ou notação literal

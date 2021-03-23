@@ -10,6 +10,9 @@ $(document).ready( () => {
     $('.modal').modal();
 });
 
+let anoAtual = new Date();
+$('#ano').text(anoAtual.getFullYear());
+
 function modificaCor(novaCor) {
 
     let listaMudaCor = document.getElementsByClassName('mudaCor');
