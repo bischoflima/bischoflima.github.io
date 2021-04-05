@@ -42,7 +42,7 @@
 - [ ] Função anônima com retorno
 - [ ] Função auto-executável
 - [x] Função com nome
-- [ ] Função aninhada/local - declarar uma função dentro de outra
+- [x] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
@@ -57,14 +57,14 @@
 - [ ] Via referência DOM pelo id do elemento HTML
 - [ ] Via getElementByID()
 - [ ] Via getElementsByName()
-- [ ] Via getElementsByTagName()
+- [x] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 ### Tratadores de Evento
 - [x] Especificar o tratador de evento inline
 - [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
-- [ ] Usar o operador this em funções tratadoras de eventos.
+- [x] Usar o operador this em funções tratadoras de eventos.
 
 ### Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
@@ -73,18 +73,18 @@
    - [ ] 
 - [ ] Usar laço de repetição (for..in ou for..of ou forEach)
    - [x] For...of
-   - [ ] For...in
+   - [x] For...in
    - [ ] forEach
 - [ ] Usar pelo menos 3 métodos para manipulação de string
    - [ ] trim
    - [ ] toLowerCase
-   - [ ] search
-- [ ] String Template 
+   - [x] split
+- [x] String Template 
 
 ### Objetos
-- [ ] Criar objeto usando função construtora ou notação literal
-- [ ] Criar objetos a partir da definição de classes do ES6
-- [ ] Usar herança prototipal nativa ou herança de classes do ES6
+- [x] Criar objeto usando função construtora ou notação literal
+- [x] Criar objetos a partir da definição de classes do ES6
+- [x] Usar herança prototipal nativa ou herança de classes do ES6
 
 # Avaliação 2
 

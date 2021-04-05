@@ -1,36 +1,36 @@
-class BD {
+class BdAnotacao {
 
     constructor() {
-        let id = localStorage.getItem('id');
+        let id = localStorage.getItem('id_anotacao');
 
         if (id === null) {
-            localStorage.setItem('id', 0);
+            localStorage.setItem('id_anotacao', 0);
         }
     }
 
     getProximoId() {
-        let proximoId = localStorage.getItem('id');
+        let proximoId = localStorage.getItem('id_anotacao');
         return parseInt(proximoId) + 1;
     }
 
-    gravar(nota) {
+    gravar(anotacao) {
         let id = this.getProximoId();
-        localStorage.setItem('id', id);
-        localStorage.setItem(id, JSON.stringify(nota));
+        localStorage.setItem('id_anotacao', id);
+        localStorage.setItem(id, JSON.stringify(anotacao));
     }
 
     recuperarTodosRegistros() {
-        let qtdRegistros = parseInt(localStorage.getItem('id'));
-        let notas = [];
+        let qtdRegistros = parseInt(localStorage.getItem('id_anotacao'));
+        let anotacoes = [];
 
         for (let i = 1; i <= qtdRegistros; i++) {
             if (localStorage.getItem(i) === null)
                 continue;
-            let nota = JSON.parse(localStorage.getItem(i));
-            nota.id = i;
-            notas.push(nota);
+            let anotacao = JSON.parse(localStorage.getItem(i));
+            anotacao.id = i;
+            anotacoes.push(anotacao);
         }
-        return notas;
+        return anotacoes;
     }
 
     removerRegistro(id = undefined){

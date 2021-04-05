@@ -12,11 +12,11 @@
   <title>Login</title>
 </head>
 
-<body>
+<body> 
   <!--inicio da nav-->
   <nav class="blue darken-2 mudaCor" id="barra_nav">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"> <i class="material-icons">sticky_note_2</i>ColorNote</a>
+      <a href="#!" class="brand-logo" id="titulo"> <i class="material-icons">sticky_note_2</i>ColorNote</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Login</a></li>
@@ -29,7 +29,7 @@
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#">Login</a></li>
     <li><a class="tooltipped modal-trigger" href="#modal1" data-position="bottom"
-      data-tooltip="Escolha sua cor preferida para o site!">Color</a></li>
+        data-tooltip="Escolha sua cor preferida para o site!">Color</a></li>
     <li><a href="sobre.html">Sobre</a></li>
   </ul>
 
@@ -37,13 +37,13 @@
     <div class="modal-content">
       <h4>Selecione sua cor preferida</h4>
       <div id="cores">
-      <input type="button" onclick="modificaCor('blue')" class="btn_cores blue darken-2">
-      <input type="button" onclick="modificaCor('green')" class="btn_cores green darken-2">
-      <input type="button" onclick="modificaCor('red')" class="btn_cores red darken-2">
-      <input type="button" onclick="modificaCor('yellow')" class="btn_cores yellow darken-2">
-      <input type="button" onclick="modificaCor('purple')" class="btn_cores purple darken-2">
-      <input type="button" onclick="modificaCor('orange')" class="btn_cores orange darken-2">
-    </div>
+        <button onclick="modificaCor(this)" class="btn_cores blue darken-2"></button>
+        <button onclick="modificaCor(this)" class="btn_cores green darken-2"></button>
+        <button onclick="modificaCor(this)" class="btn_cores red darken-2"></button>
+        <button onclick="modificaCor(this)" class="btn_cores yellow darken-2"></button>
+        <button onclick="modificaCor(this)" class="btn_cores purple darken-2"></button>
+        <button onclick="modificaCor(this)" class="btn_cores orange darken-2"></button>
+      </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
@@ -55,29 +55,61 @@
 
     <h2 class="blue-text text-darken-3 center mudaCorTexto">Login</h2>
 
-    <div class="blue container row lighten-5 center formulario mudaCor">
-      <form class="col s12 m8 offset-m2 l10 offset-l2" id="">
-        <div class="row">
-          <div class="input-field col s10">
-            <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">account_circle</i>
-            <input id="icon_prefix" type="text" class="blue-text text-darken-3 validate mudaCorTexto">
-            <label for="icon_prefix" class="blue-text text-darken-3 mudaCorTexto">Usuário</label>
-          </div>
+    <div class="blue lighten-5 container row center formulario mudaCor">
+      <a href="index.html" class="blue-text  text-darken-3 tooltipped mudaCorTexto" data-position="bottom"
+        data-tooltip="Se já esta cadastrado só fazer o login!">Já está cadastrado? Faça o Login!</a>
+    </div>
 
-          <div class="input-field col s10">
-            <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">password</i>
-            <input id="icon_senha" type="tel" class="blue-text text-darken-3 validate mudaCorTexto">
-            <label for="icon_senha" class="blue-text text-darken-3 mudaCorTexto">Senha</label>
+    <div class="blue container row lighten-5 center formulario mudaCor">
+
+      <form  id="formulario_dados">
+        <div class="col s12 m8 offset-m2 l10 offset-l2">
+          <div class="row">
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">account_circle</i>
+              <input id="icon_nome" type="text" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_nome" class="blue-text text-darken-3 mudaCorTexto">Nome</label>
+            </div>
+
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">account_circle</i>
+              <input id="icon_sobrenome" type="text" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_sobrenome" class="blue-text text-darken-3 mudaCorTexto">Sobrenome</label>
+            </div>
+
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">email</i>
+              <input id="icon_email" type="email" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_email" class="blue-text text-darken-3 mudaCorTexto">Email</label>
+            </div>
+
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">event</i>
+              <input id="icon_data" type="date" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_data" class="blue-text text-darken-3 mudaCorTexto">Data Nascimento</label>
+            </div>
+
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">password</i>
+              <input id="icon_senha1" type="password" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_senha1" class="blue-text text-darken-3 mudaCorTexto">Senha forte</label>
+            </div>
+
+            <div class="input-field col s12 l5">
+              <i class="blue-text text-darken-3 material-icons prefix mudaCorTexto">password</i>
+              <input id="icon_senha2" type="password" class="blue-text text-darken-3 validate mudaCorTexto">
+              <label for="icon_senha2" class="blue-text text-darken-3 mudaCorTexto">Repetir senha forte</label>
+            </div>
           </div>
         </div>
+        <div class="input-field col s12">
+          <button class="blue darken-3 waves-effect waves-light btn-large center mudaCor" type="submit">Entrar</button>
+        </div>
       </form>
-      <a class="blue darken-3 waves-effect waves-light btn-large center mudaCor">Entrar</a>
+
     </div>
 
-    <div class="blue lighten-5 container row center formulario mudaCor mudaCor"><a href="cadastro.html" class="blue-text  text-darken-3 tooltipped mudaCorTexto"
-        data-position="bottom" data-tooltip="Ainda não possui cadastro? Então faça logo o registro!">Registrar-se
-        agora!</a>
-    </div>
+
   </main>
 
   <!--inicio do footer-->
@@ -98,13 +130,14 @@
       </div>
     </div>
   </footer>
-  
+
   <!--final do footer-->
 
   <script src="assets/libraries/jquery/jquery.js"></script>
   <script src="assets/libraries/materialize/js/materialize.min.js"></script>
   <script src="assets/resources/scripts/global.js"></script>
   <script src="assets/resources/scripts/index.js"></script>
+  <script src="assets/resources/scripts/cadastro.js"></script>
 
 </body>
 
