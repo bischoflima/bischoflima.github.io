@@ -29,33 +29,33 @@
 
 ### Caixas de Diálogo
   - [ ] prompt
-  - [ ] alert
-  - [ ] confirm
+  - [x] alert
+  - [x] confirm
   
 ### Temporizadores
 - [ ] setInterval
-- [ ] setTimeout
+- [x] setTimeout
   
 ### Funções
-- [ ] Função anônima com argumento
-- [ ] Função anônima sem argumento
-- [ ] Função anônima com retorno
-- [ ] Função auto-executável
+- [x] Função anônima com argumento
+- [x] Função anônima sem argumento
+- [x] Função anônima com retorno
+- [x] Função auto-executável
 - [x] Função com nome
 - [x] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
+- [x] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 ### Eventos
 - [ ] Evento de carregamento do documento - onload
-- [ ] Evento de movimento do mouse
-- [ ] Evento de teclado - usar charCode ou keyCode
-- [ ] Eventos de formulário - onfocus e onblur
-- [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
+- [x] Evento de movimento do mouse
+- [x] Evento de teclado - usar charCode ou keyCode
+- [x] Eventos de formulário - onfocus e onblur
+- [x] Imprimir alguma propriedade do objeto event recebido como parâmetro
 
 ### Acesso aos elementos DOM do HTML
-- [ ] Via referência DOM pelo id do elemento HTML
-- [ ] Via getElementByID()
+- [x] Via referência DOM pelo id do elemento HTML
+- [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [x] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
@@ -63,21 +63,21 @@
 ### Tratadores de Evento
 - [x] Especificar o tratador de evento inline
 - [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
 - [x] Usar o operador this em funções tratadoras de eventos.
 
 ### Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
    - [x] repleace
-   - [ ] forEach
-   - [ ] 
-- [ ] Usar laço de repetição (for..in ou for..of ou forEach)
+   - [x] forEach
+   - [x] 
+- [x] Usar laço de repetição (for..in ou for..of ou forEach)
    - [x] For...of
    - [x] For...in
-   - [ ] forEach
-- [ ] Usar pelo menos 3 métodos para manipulação de string
-   - [ ] trim
-   - [ ] toLowerCase
+   - [x] forEach
+- [x] Usar pelo menos 3 métodos para manipulação de string
+   - [x] trim
+   - [x] toLowerCase
    - [x] split
 - [x] String Template 
 

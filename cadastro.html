@@ -12,12 +12,15 @@
   <title>Login</title>
 </head>
 
-<body> 
+<body>
   <!--inicio da nav-->
   <nav class="blue darken-2 mudaCor" id="barra_nav">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo" id="titulo"> <i class="material-icons">sticky_note_2</i>ColorNote</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#!" class="brand-logo" id="titulo"> <i class="material-icons">sticky_note_2</i>
+        <span id="titulo_texto">ColorNote</span>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i>
+      </a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Login</a></li>
         <li><a class="tooltipped modal-trigger" href="#modal1" data-position="bottom"
@@ -62,7 +65,7 @@
 
     <div class="blue container row lighten-5 center formulario mudaCor">
 
-      <form  id="formulario_dados">
+      <form id="formulario_dados">
         <div class="col s12 m8 offset-m2 l10 offset-l2">
           <div class="row">
             <div class="input-field col s12 l5">
@@ -102,9 +105,28 @@
             </div>
           </div>
         </div>
-        <div class="input-field col s12">
-          <button class="blue darken-3 waves-effect waves-light btn-large center mudaCor" type="submit">Entrar</button>
+
+        <div class="blue-text darken-3 row mudaCorTexto">
+          <div>
+            <fieldset style="border-radius: 1em; border-color: rgba(0, 0, 0, 0.1);">
+              <legend >Força da senha</legend>
+              <p class="range-field">
+                <input type="range" id="forca_senha" min="1" max="100" disabled value="1" />
+              </p>
+
+              <span class="blue-text darken-3 center mudaCor mudaCorTexto col s4">fraca </span>
+              <span class="blue-text darken-3 center mudaCor mudaCorTexto col s4">média </span>
+              <span class="blue-text darken-3 center mudaCor mudaCorTexto col s4">forte </span>
+
+          </div>
+          </fieldset>
         </div>
+
+        <div class="input-field col s12">
+          <button class="blue darken-3 waves-effect waves-light btn-large center mudaCor" type="submit">Salvar</button>
+        </div>
+
+
       </form>
 
     </div>

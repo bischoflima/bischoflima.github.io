@@ -13,15 +13,39 @@ $(document).ready(() => {
 let anoAtual = new Date();
 $('#ano').text(anoAtual.getFullYear());
 
-let mudaTitulo = () => {
+(function () {
     if (window.innerWidth < 459) {
-        document.getElementById('titulo').getAttribute('width') -= 10;
+        document.getElementById('titulo_texto').style.fontSize = '1.5rem';
         console.log('teste resize');
+    } else {
+        document.getElementById('titulo_texto').style.fontSize = '2.1rem';
     }
-    console.log('teste resize');
+})();
+
+function mudaTitulo() {
+
+    if (window.innerWidth < 459) {
+        document.getElementById('titulo_texto').style.fontSize = '1.5rem';
+        console.log('teste resize');
+    } else {
+        document.getElementById('titulo_texto').style.fontSize = '2.1rem';
+    }
+
+
 }
 
-document.addEventListener('resize', mudaTitulo);
+window.addEventListener('resize', mudaTitulo);
+
+document.querySelector('.sidenav-trigger').onmouseover = () => {
+    if (window.screen.width > 650)
+        $('.sidenav').sidenav('open');
+
+    let tempo = setTimeout(() => {
+        $('.sidenav').sidenav('close');
+    }, 7000);
+
+};
+
 
 function modificaCor(botao) {
     let novaCor = (botao.getAttribute('class').split(' '))[1];
