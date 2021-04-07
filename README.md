@@ -47,7 +47,7 @@
 - [x] Função Flecha - Arrow Function
 
 ### Eventos
-- [ ] Evento de carregamento do documento - onload
+- [x] Evento de carregamento do documento - onload
 - [x] Evento de movimento do mouse
 - [x] Evento de teclado - usar charCode ou keyCode
 - [x] Eventos de formulário - onfocus e onblur
@@ -62,15 +62,15 @@
 
 ### Tratadores de Evento
 - [x] Especificar o tratador de evento inline
-- [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
 - [x] Usar o operador this em funções tratadoras de eventos.
 
 ### Objetos Nativos
-- [ ] Usar pelo menos 3 métodos de manipulação de array
+- [x] Usar pelo menos 3 métodos de manipulação de array
    - [x] repleace
    - [x] forEach
-   - [x] 
+   - [x] push
 - [x] Usar laço de repetição (for..in ou for..of ou forEach)
    - [x] For...of
    - [x] For...in

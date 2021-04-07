@@ -10,8 +10,10 @@ $(document).ready(() => {
     $('.modal').modal();
 });
 
-let anoAtual = new Date();
-$('#ano').text(anoAtual.getFullYear());
+document.onload = () => {
+    let anoAtual = new Date();
+    $('#ano').text(anoAtual.getFullYear());
+};
 
 (function () {
     if (window.innerWidth < 459) {
